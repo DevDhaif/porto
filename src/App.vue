@@ -4,11 +4,13 @@
 import HelloWorld from './components/HelloWorld.vue'
 import Navbar from './components/Navbar.vue';
 import Footer from './components/Footer.vue';
+import Intro from './components/Intro.vue';
 </script>
 
 <template >
 
   <Navbar />
+  <Intro />
   <Footer />
 </template>
 <!--
