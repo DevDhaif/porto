@@ -9,7 +9,7 @@
             </p>
 
             <p
-                class="px-4 py-2 mx-auto mt-4 duration-100 rounded-md cursor-pointer text-cyan-800 bg-cyan-100 w-fit hover:bg-cyan-400 hover:text-cyan-50 hover:scale-105">
+                class="px-4 py-2 mx-auto mt-4 text-lg font-semibold tracking-wider duration-100 rounded-md cursor-pointer text-cyan-800 bg-cyan-100 w-fit hover:bg-cyan-900 hover:text-cyan-50 hover:scale-105">
                 <a href="mailto:devdhaif@gmail.com">
                     Email me </a>
             </p>
