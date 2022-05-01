@@ -8,7 +8,7 @@
     -->
 
     <nav class="w-full p-4 mx-auto font-mono text-white xl:max-w-6xl">
-        <ul class="flex flex-col flex-wrap items-center justify-center gap-4 md:justify-start md:flex-row sm:flex-row ">
+        <ul class="flex flex-col flex-wrap items-center justify-center gap-8 md:justify-start md:flex-row sm:flex-row ">
             <li class=" basis-full md:basis-auto md:mr-auto">
                 <h1 class="text-3xl text-center md:text-left"><a class="flex justify-center gap-4 " href="#index.html">
                         <svg class="w-8 fill-cyan-400 " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
@@ -26,7 +26,7 @@
                     href="#">Resume</a></li>
             <li>
                 <a class="block hover:text-cyan-400" href="https://github.com/DevDhaif" target="_blank">
-                    <span class=" fill-cyan-400" aria-hidden="true">
+                    <span class=" fill-cyan-200" aria-hidden="true">
                         <svg class="w-8 h-8 transition-transform duration-75 transform cursor-pointer hover:scale-105 "
                             xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
                             <path
@@ -38,7 +38,7 @@
             </li>
             <li>
                 <a class="block hover:text-cyan-400" href="https://www.linkedin.com/in/dhaifallah-ahmed-160490203/">
-                    <span class="fill-cyan-400" aria-hidden="true">
+                    <span class="fill-cyan-200" aria-hidden="true">
                         <svg class="w-8 h-8 transition-transform duration-75 transform cursor-pointer hover:scale-105"
                             xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
                             <path

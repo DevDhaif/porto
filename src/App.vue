@@ -5,12 +5,17 @@ import HelloWorld from './components/HelloWorld.vue'
 import Navbar from './components/Navbar.vue';
 import Footer from './components/Footer.vue';
 import Intro from './components/Intro.vue';
+import Contact from './components/Contact.vue';
 </script>
 
 <template >
 
   <Navbar />
   <Intro />
+  <div class="w-full h-1 bg-gradient-to-r from-cyan-50 to-cyan-50 via-cyan-400"></div>
+  <Contact />
+  <div class="w-full h-1 bg-gradient-to-r from-cyan-50 to-cyan-50 via-cyan-400"></div>
+
   <Footer />
 </template>
 <!--

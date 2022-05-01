@@ -1,5 +1,5 @@
 <template>
-    <footer class="w-full font-mono text-center text-white xl:max-w-6xl">
+    <footer class="w-full py-12 mx-auto my-4 font-mono text-center text-white xl:max-w-6xl">
         <h2 class="text-2xl">Dhaifallah &middot;
             <span class="text-cyan-500">Front-end Developer</span>
         </h2>
@@ -29,7 +29,7 @@
                 </a>
             </li>
             <li>
-                <a class="block hover:text-cyan-400" href="https://www.linkedin.com/in/dhaifallah-ahmed-160490203/">
+                <a class="block hover:text-cyan-400" href="mailto:devdhaif@gmail.com" target="_blank">
                     <span class="fill-cyan-400" aria-hidden="true">
                         <svg class="w-8 h-8 transition-transform duration-75 transform cursor-pointer hover:scale-105"
                             xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
