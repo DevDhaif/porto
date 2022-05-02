@@ -12,11 +12,14 @@ import Projects from './components/Projects.vue';
 <template >
 
   <Navbar />
+
   <Intro />
   <div class="w-full h-1 bg-gradient-to-r from-cyan-50 to-cyan-50 via-cyan-400"></div>
   <Contact />
   <div class="w-full h-1 bg-gradient-to-r from-cyan-50 to-cyan-50 via-cyan-400"></div>
   <Projects />
+  <div class="w-full h-1 bg-gradient-to-r from-cyan-50 to-cyan-50 via-cyan-400"></div>
+
   <Footer />
 </template>
 <!--

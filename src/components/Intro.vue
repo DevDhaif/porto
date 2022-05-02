@@ -15,5 +15,16 @@
             </span>
             to Improve my skills
         </p>
+        <SkillSet />
     </section>
 </template>
+<script>
+import SkillSet from './SkillSet.vue'
+
+export default {
+    name: 'App',
+    components: {
+        SkillSet
+    }
+}
+</script>

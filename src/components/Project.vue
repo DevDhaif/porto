@@ -1,6 +1,6 @@
 <template>
     <article
-        class="gap-8 px-8 py-4 my-8 space-y-10 rounded-md shadow-lg md:space-y-0 md:grid-cols-8 place-items-stretch md:grid shadow-cyan-300/30">
+        class="gap-8 px-8 py-4 my-8 space-y-12 rounded-md shadow-lg md:space-y-0 md:grid-cols-8 md:grid shadow-cyan-300/30">
 
         <div class="order-1 col-start-5 col-end-11 row-start-1 space-y-8 md:text-right">
             <h3 class="mx-auto text-2xl text-cyan-300">{{ data.title }}</h3>

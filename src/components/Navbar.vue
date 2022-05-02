@@ -8,8 +8,10 @@
     -->
 
     <nav class="w-full p-4 mx-auto font-mono text-white xl:max-w-6xl">
-        <ul class="flex flex-col flex-wrap items-center justify-center gap-8 md:justify-start md:flex-row sm:flex-row ">
-            <li class=" basis-full md:basis-auto md:mr-auto">
+        <button class="md:hidden" v-on:click="toggle">Shiw</button>
+        <ul class="flex-col flex-wrap items-center justify-center gap-8 transition-all duration-1000 md:justify-start sm:flex-row"
+            :class="show ? 'flex' : 'hidden'">
+            <li class="!block basis-full md:basis-auto md:mr-auto">
                 <h1 class="text-3xl text-center md:text-left"><a class="flex justify-center gap-4 " href="#index.html">
                         <svg class="w-8 fill-cyan-400 " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
                             <path
@@ -23,7 +25,7 @@
             <li><a class="block text-lg hover:text-cyan-400" href="#about.html">About</a></li>
             <li><a class="block text-lg hover:text-cyan-400" href="#contact">Contact</a></li>
             <li><a class="block px-2 py-1 text-lg font-semibold rounded-md hover:text-rose-100 bg-cyan-700 hover:bg-cyan-600 hover:scale-105"
-                    href="#">Resume</a></li>
+                    href="../../public/ex.pdf" download>Resume</a></li>
             <li>
                 <a class="block hover:text-cyan-400" href="https://github.com/DevDhaif" target="_blank">
                     <span class=" fill-cyan-200" aria-hidden="true">
@@ -51,6 +53,20 @@
         </ul>
     </nav>
 
-
-
 </template>
+<script>
+export default {
+    data() {
+        return {
+            show: true
+        };
+
+    },
+    methods: {
+        toggle() {
+            this.show = !this.show
+        }
+    }
+
+}
+</script>
