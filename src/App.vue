@@ -7,11 +7,14 @@ import Footer from './components/Footer.vue';
 import Intro from './components/Intro.vue';
 import Contact from './components/Contact.vue';
 import Projects from './components/Projects.vue';
+import TestNav from './components/TestNav.vue';
+
 </script>
 
 <template >
 
-  <Navbar />
+  <TestNav />
+  <div class="w-full h-1 bg-gradient-to-r from-cyan-50 to-cyan-50 via-cyan-400"></div>
 
   <Intro />
   <div class="w-full h-1 bg-gradient-to-r from-cyan-50 to-cyan-50 via-cyan-400"></div>

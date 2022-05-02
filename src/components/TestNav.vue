@@ -1,32 +1,26 @@
 <template>
-    <!--
-    <svg class="w-12 h-12 fill-cyan-600" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
-        <path
-            d="M414.8 40.79L286.8 488.8C281.9 505.8 264.2 515.6 247.2 510.8C230.2 505.9 220.4 488.2 225.2 471.2L353.2 23.21C358.1 6.216 375.8-3.624 392.8 1.232C409.8 6.087 419.6 23.8 414.8 40.79H414.8zM518.6 121.4L630.6 233.4C643.1 245.9 643.1 266.1 630.6 278.6L518.6 390.6C506.1 403.1 485.9 403.1 473.4 390.6C460.9 378.1 460.9 357.9 473.4 345.4L562.7 256L473.4 166.6C460.9 154.1 460.9 133.9 473.4 121.4C485.9 108.9 506.1 108.9 518.6 121.4V121.4zM166.6 166.6L77.25 256L166.6 345.4C179.1 357.9 179.1 378.1 166.6 390.6C154.1 403.1 133.9 403.1 121.4 390.6L9.372 278.6C-3.124 266.1-3.124 245.9 9.372 233.4L121.4 121.4C133.9 108.9 154.1 108.9 166.6 121.4C179.1 133.9 179.1 154.1 166.6 166.6V166.6z" />
-    </svg>
-    
-    -->
-
-    <nav class="w-full p-4 mx-auto font-mono text-white bg-red-900 xl:max-w-6xl">
-        <button class="md:hidden" v-on:click="toggle">Shiw</button>
-        <ul class="flex-col flex-wrap items-center justify-center gap-8 transition-all duration-1000 md:justify-start sm:flex-row"
-            :class="show ? 'flex' : 'hidden'">
-            <li class="!block basis-full md:basis-auto md:mr-auto">
-                <h1 class="text-3xl text-center md:text-left"><a class="flex justify-center gap-4 " href="#index.html">
-                        <svg class="w-8 fill-cyan-400 " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
-                            <path
-                                d="M414.8 40.79L286.8 488.8C281.9 505.8 264.2 515.6 247.2 510.8C230.2 505.9 220.4 488.2 225.2 471.2L353.2 23.21C358.1 6.216 375.8-3.624 392.8 1.232C409.8 6.087 419.6 23.8 414.8 40.79H414.8zM518.6 121.4L630.6 233.4C643.1 245.9 643.1 266.1 630.6 278.6L518.6 390.6C506.1 403.1 485.9 403.1 473.4 390.6C460.9 378.1 460.9 357.9 473.4 345.4L562.7 256L473.4 166.6C460.9 154.1 460.9 133.9 473.4 121.4C485.9 108.9 506.1 108.9 518.6 121.4V121.4zM166.6 166.6L77.25 256L166.6 345.4C179.1 357.9 179.1 378.1 166.6 390.6C154.1 403.1 133.9 403.1 121.4 390.6L9.372 278.6C-3.124 266.1-3.124 245.9 9.372 233.4L121.4 121.4C133.9 108.9 154.1 108.9 166.6 121.4C179.1 133.9 179.1 154.1 166.6 166.6V166.6z" />
-                        </svg>
-                        <span> Dhaif</span>
-                    </a>
-                </h1>
+    <nav
+        class="relative flex flex-col justify-between w-full max-w-6xl p-4 mx-auto font-mono text-white gap-y-4 md:flex-row">
+        <div class="flex mx-0 mr-auto sm:mx-auto md:mx-0 gap-x-4">
+            <h1 class="text-3xl text-center md:text-left"><a class="flex justify-center gap-4 " href="#index.html">
+                    <svg class="w-8 fill-cyan-400 " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+                        <path
+                            d="M414.8 40.79L286.8 488.8C281.9 505.8 264.2 515.6 247.2 510.8C230.2 505.9 220.4 488.2 225.2 471.2L353.2 23.21C358.1 6.216 375.8-3.624 392.8 1.232C409.8 6.087 419.6 23.8 414.8 40.79H414.8zM518.6 121.4L630.6 233.4C643.1 245.9 643.1 266.1 630.6 278.6L518.6 390.6C506.1 403.1 485.9 403.1 473.4 390.6C460.9 378.1 460.9 357.9 473.4 345.4L562.7 256L473.4 166.6C460.9 154.1 460.9 133.9 473.4 121.4C485.9 108.9 506.1 108.9 518.6 121.4V121.4zM166.6 166.6L77.25 256L166.6 345.4C179.1 357.9 179.1 378.1 166.6 390.6C154.1 403.1 133.9 403.1 121.4 390.6L9.372 278.6C-3.124 266.1-3.124 245.9 9.372 233.4L121.4 121.4C133.9 108.9 154.1 108.9 166.6 121.4C179.1 133.9 179.1 154.1 166.6 166.6V166.6z" />
+                    </svg>
+                    <span> Dhaif</span>
+                </a>
+            </h1>
+        </div>
+        <button @click="openMenu" class="absolute p-4 top-2 right-5 md:hidden">
+            <span v-show="!open"><i class="text-white transition-all duration-500 ease-in fa-solid fa-bars"></i></span>
+            <span v-show="open"><i class="text-white transition-all duration-500 ease-in fa-solid fa-xmark"></i></span>
+        </button>
+        <ul class="absolute flex flex-col flex-wrap items-start justify-between w-full px-4 duration-500 ease-in bg-gray-800 shadow-md bg-opacity-80 top-20 md:w-auto md:static gap-x-8 sm:flex-row shadow-cyan-300 md:shadow-none"
+            :class="[open ? 'left-0' : '-left-[120%]']">
+            <li class="my-4 animate-underline md:my-0" v-for="link in Links" :key="link.name">
+                <a href={{link.link}} class="text-lg hover:text-cyan-300">{{ link.name }}</a>
             </li>
-            <li><a class="text-lg hover:text-cyan-400" href="#projects">Projects</a></li>
-            <li><a class="block text-lg hover:text-cyan-400" href="#about.html">About</a></li>
-            <li><a class="block text-lg hover:text-cyan-400" href="#contact">Contact</a></li>
-            <li><a class="block px-2 py-1 text-lg font-semibold rounded-md hover:text-rose-100 bg-cyan-700 hover:bg-cyan-600 hover:scale-105"
-                    href="../../public/ex.pdf" download>Resume</a></li>
-            <li>
+            <li class="my-4 md:my-0">
                 <a class="block hover:text-cyan-400" href="https://github.com/DevDhaif" target="_blank">
                     <span class=" fill-cyan-200" aria-hidden="true">
                         <svg class="w-8 h-8 transition-transform duration-75 transform cursor-pointer hover:scale-105 "
@@ -38,7 +32,7 @@
                     <span class="sr-only">Github</span>
                 </a>
             </li>
-            <li>
+            <li class="my-4 md:my-0">
                 <a class="block hover:text-cyan-400" href="https://www.linkedin.com/in/dhaifallah-ahmed-160490203/">
                     <span class="fill-cyan-200" aria-hidden="true">
                         <svg class="w-8 h-8 transition-transform duration-75 transform cursor-pointer hover:scale-105"
@@ -52,21 +46,26 @@
             </li>
         </ul>
     </nav>
-
 </template>
-<script>
+<script >
+import { ref } from "vue"
+
 export default {
     data() {
         return {
-            show: true
-        };
+            Links: [
+                { name: 'Projects', link: '#projects' },
+                { name: 'About', link: '#about.html' },
+                { name: 'Contact', link: '#contact' },
+                { name: 'Resume', link: '../../public/ex.pdf' },
 
-    },
-    methods: {
-        toggle() {
-            this.show = !this.show
+            ],
+            open: ref(false),
+            openMenu() {
+                this.open = !this.open
+                return this.open
+            }
         }
     }
-
 }
 </script>
