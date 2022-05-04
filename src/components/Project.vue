@@ -40,7 +40,7 @@
                     <i
                         class="w-8 h-8 block  transition-transform duration-75 transform cursor-pointer fill-cyan-800 stroke-cyan-800 dark:fill-cyan-200 dark:stroke-cyan-200  hover:scale-105 fa-solid fa-desktop"></i>
 
-                    <span class="text-center"> Code </span>
+                    <span class="text-center"> Live </span>
                 </a>
             </div>
         </div>

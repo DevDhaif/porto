@@ -1,12 +1,12 @@
 <template>
-    <footer class="w-full py-12 mx-auto my-4 font-mono text-center text-white xl:max-w-6xl">
+    <footer class="w-full py-12 mx-auto my-4 font-mono text-center text-cyan-700 dark:text-cyan-200  xl:max-w-6xl">
         <h2 class="text-2xl">Dhaifallah &middot;
-            <span class="text-cyan-500">Front-end Developer</span>
+            <span class="dark:text-cyan-100 text-cyan-900">Front-end Developer</span>
         </h2>
         <ul class="flex flex-wrap justify-center my-8 gap-x-12">
             <li>
-                <a class="block hover:text-cyan-400" href="https://github.com/DevDhaif" target="_blank">
-                    <span class=" fill-cyan-400" aria-hidden="true">
+                <a class="block " href="https://github.com/DevDhaif" target="_blank">
+                    <span class="fill-cyan-800  dark:fill-cyan-200" aria-hidden="true">
                         <svg class="w-8 h-8 transition-transform duration-75 transform cursor-pointer hover:scale-105 "
                             xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
                             <path
@@ -18,7 +18,7 @@
             </li>
             <li>
                 <a class="block hover:text-cyan-400" href="https://www.linkedin.com/in/dhaifallah-ahmed-160490203/">
-                    <span class="fill-cyan-400" aria-hidden="true">
+                    <span class="fill-cyan-800 dark:fill-cyan-200" aria-hidden="true">
                         <svg class="w-8 h-8 transition-transform duration-75 transform cursor-pointer hover:scale-105"
                             xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
                             <path
@@ -30,7 +30,7 @@
             </li>
             <li>
                 <a class="block hover:text-cyan-400" href="mailto:devdhaif@gmail.com" target="_blank">
-                    <span class="fill-cyan-400" aria-hidden="true">
+                    <span class="fill-cyan-800 dark:fill-cyan-200" aria-hidden="true">
                         <svg class="w-8 h-8 transition-transform duration-75 transform cursor-pointer hover:scale-105"
                             xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                             <path
@@ -42,6 +42,6 @@
             </li>
         </ul>
 
-        <p>&copy; 2021 Dhaifallah. All rights reserved.</p>
+        <p class="text-cyan-900 dark:text-cyan-100">&copy; 2022 Dhaifallah. All rights reserved.</p>
     </footer>
 </template>

@@ -7,9 +7,9 @@
     
     -->
 
-    <nav class="w-full p-4 mx-auto font-mono text-white bg-red-900 xl:max-w-6xl">
+    <nav class="w-full p-4 mx-auto font-mono text-white  xl:max-w-6xl">
         <button class="md:hidden" v-on:click="toggle">Shiw</button>
-        <ul class="flex-col flex-wrap items-center justify-center gap-8 transition-all duration-1000 md:justify-start sm:flex-row"
+        <ul class="bg-red-400 flex-col flex-wrap items-center justify-center gap-8 transition-all duration-1000 md:justify-start sm:flex-row"
             :class="show ? 'flex' : 'hidden'">
             <li class="!block basis-full md:basis-auto md:mr-auto">
                 <h1 class="text-3xl text-center md:text-left"><a class="flex justify-center gap-4 " href="#index.html">
