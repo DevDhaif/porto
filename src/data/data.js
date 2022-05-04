@@ -124,7 +124,7 @@ export const projectsInfo = [
     imgSrc:
       "https://user-images.githubusercontent.com/77447520/166709483-705f6ff5-0fd1-4bf6-9c71-02c8bbf5925d.JPG",
     githubLink: "https://github.com/DevDhaif/porto",
-    demoLink: "https://ib7ath.vercel.app/search",
+    demoLink: "https://porto-azure.vercel.app/",
     techs: ["HTML", "Vue Js", "Tailwind css", "Vite"],
   },
 ];
