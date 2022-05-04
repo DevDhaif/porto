@@ -12,19 +12,39 @@ import TestNav from './components/TestNav.vue';
 </script>
 
 <template >
+  <div :class="isDark ? 'dark' : ''">
+    <TestNav isDark=false />
+    <div
+      class="w-full h-1 bg-gradient-to-r dark:from-cyan-50 from-cyan-800 dark:to-cyan-50 to-cyan-800 via-cyan-300 dark:via-cyan-400">
+    </div>
+    <Intro />
+    <div
+      class="w-full h-1 bg-gradient-to-r dark:from-cyan-50 from-cyan-800 dark:to-cyan-50 to-cyan-800 via-cyan-300 dark:via-cyan-400">
+    </div>
+    <Contact />
+    <div
+      class="w-full h-1 bg-gradient-to-r dark:from-cyan-50 from-cyan-800 dark:to-cyan-50 to-cyan-800 via-cyan-300 dark:via-cyan-400">
+    </div>
+    <Projects />
+    <div
+      class="w-full h-1 bg-gradient-to-r dark:from-cyan-50 from-cyan-800 dark:to-cyan-50 to-cyan-800 via-cyan-300 dark:via-cyan-400">
+    </div>
 
-  <TestNav />
-  <div class="w-full h-1 bg-gradient-to-r from-cyan-50 to-cyan-50 via-cyan-400"></div>
-
-  <Intro />
-  <div class="w-full h-1 bg-gradient-to-r from-cyan-50 to-cyan-50 via-cyan-400"></div>
-  <Contact />
-  <div class="w-full h-1 bg-gradient-to-r from-cyan-50 to-cyan-50 via-cyan-400"></div>
-  <Projects />
-  <div class="w-full h-1 bg-gradient-to-r from-cyan-50 to-cyan-50 via-cyan-400"></div>
-
-  <Footer />
+    <Footer />
+  </div>
 </template>
+<script>
+export default {
+
+  name: 'App',
+  data() {
+
+    return {
+      isDark: false,
+    }
+  }
+}
+</script>
 <!--
 <style>
 #app {
