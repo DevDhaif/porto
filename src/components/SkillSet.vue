@@ -1,17 +1,18 @@
 <template>
-    <div class="w-full max-w-2xl pt-8 mx-auto max-h-fit">
-        <h1 class="py-8 text-3xl text-center dark:text-cyan-300 text-cyan-900">My Skill set</h1>
+    <div class="w-full max-w-2xl pt-8 mx-auto transition-all duration-500 max-h-fit">
+        <h1 class="py-8 transition-all duration-500 text-3xl text-center dark:text-cyan-300 text-cyan-900">My Skill set
+        </h1>
 
 
-        <ul class="grid grid-cols-8 grid-rows-4 gap-4 py-4 m-4">
+        <ul class="grid transition-all duration-500 grid-cols-8 grid-rows-4 gap-4 py-4 m-4">
 
             <!--REACT ICON-->
-            <li v-for="svg in svgs" :class="svg?.start" class="w-16 h-16  group relative">
+            <li v-for="svg in svgs" :class="svg?.start" class="w-16 transition-all duration-500 h-16  group relative">
                 <div
                     class="absolute bottom-0 left-0 w-full transition-all duration-150 -translate-y-full bg-black opacity-0 cursor-pointer text-cyan-50 rounded-b-xl group-hover:translate-y-0 h-1/3 group-hover:opacity-90">
                     <h1 class="text-xs font-semibold font-mono  text-center ">{{ svg?.title }} </h1>
                 </div>
-                <i class="w-16 h-16 " :class="[svg?.fontClass, svg?.fill]"></i>
+                <i class="w-16 h-16 transition-all duration-500" :class="[svg?.fontClass, svg?.fill]"></i>
             </li>
             <!--Other Icons-->
             <li class="w-16 h-16 col-start-1 group relative">
@@ -19,7 +20,7 @@
                     class="absolute bottom-0 left-0 w-full transition-all duration-150 -translate-y-full bg-black opacity-0 cursor-pointer text-cyan-50 rounded-b-xl group-hover:translate-y-0 h-1/3 group-hover:opacity-90">
                     <h1 class="text-xs font-semibold font-mono  text-center ">PostMan </h1>
                 </div>
-                <svg class="w-16 h-16 " viewBox="0 0 256 256" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                <svg class="w-16  h-16 " viewBox="0 0 256 256" version="1.1" xmlns="http://www.w3.org/2000/svg"
                     xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid">
                     <g>
                         <path
@@ -130,18 +131,75 @@
                 </svg>
             </li>
         </ul>
+        <!--Second Grid-->
+        <h1 class="py-8 text-3xl text-center dark:text-cyan-300 text-cyan-900">Fimiliar with</h1>
+
+        <ul class="grid  grid-cols-5 gap-y-4 py-4 m-4">
+            <li v-for="svg in secondSvgs" :class="svg?.start" class="w-16 h-16  group relative">
+                <div
+                    class="absolute bottom-0 left-0 w-full transition-all duration-150 -translate-y-full bg-black opacity-0 cursor-pointer text-cyan-50 rounded-b-xl group-hover:translate-y-0 h-1/3 group-hover:opacity-90">
+                    <h1 class="text-xs font-semibold font-mono  text-center ">{{ svg?.title }} </h1>
+                </div>
+                <i class="w-16 h-16  stroke-2  stroke-black rounded-3xl" :class="[svg?.fontClass, svg?.fill]"></i>
+            </li>
+
+            <li class="w-16 h-16  group relative col-start-2">
+                <div
+                    class="absolute bottom-0 left-0 w-full transition-all duration-150 -translate-y-full bg-black opacity-0 cursor-pointer text-cyan-50 rounded-b-xl group-hover:translate-y-0 h-1/3 group-hover:opacity-90">
+                    <h1 class="text-xs font-semibold font-mono  text-center ">Vue Js </h1>
+                </div>
+                <svg class="h-16 w-16" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="48" height="48"
+                    viewBox="0 0 48 48" style=" fill:#000000;">
+                    <polygon fill="#81c784" points="23.987,17 18.734,8 2.974,8 23.987,44 45,8 29.24,8"></polygon>
+                    <polygon fill="#455a64" points="29.24,8 23.987,17 18.734,8 11.146,8 23.987,30 36.828,8"></polygon>
+                </svg>
+            </li>
+            <li class="w-16 h-16  group relative col-start-4">
+                <div
+                    class="absolute bottom-0 left-0 w-full transition-all duration-150 -translate-y-full bg-black opacity-0 cursor-pointer text-cyan-50 rounded-b-xl group-hover:translate-y-0 h-1/3 group-hover:opacity-90">
+                    <h1 class="text-xs font-semibold font-mono  text-center ">Flutter </h1>
+                </div>
+                <svg class="w-16 h-16 stroke-[0.2px] stroke-cyan-400" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                    width="48" height="48" viewBox="0 0 48 48" style=" fill:#000000;">
+                    <polygon fill="#40c4ff" points="26,4 6,24 12,30 38,4"></polygon>
+                    <polygon fill="#40c4ff" points="38,22 27,33 21,27 26,22"></polygon>
+                    <rect width="8.485" height="8.485" x="16.757" y="28.757" fill="#03a9f4"
+                        transform="rotate(-45.001 21 33)"></rect>
+                    <polygon fill="#01579b" points="38,44 26,44 21,39 27,33"></polygon>
+                    <polygon fill="#084994" points="21,39 30,36 27,33"></polygon>
+                </svg>
+
+            </li>
+            <li class="w-16 h-16  group relative col-start-3">
+                <div
+                    class="absolute bottom-0 left-0 w-full transition-all duration-150 -translate-y-full bg-black opacity-0 cursor-pointer text-cyan-50 rounded-b-xl group-hover:translate-y-0 h-1/3 group-hover:opacity-90">
+                    <h1 class="text-xs font-semibold font-mono  text-center ">Figma </h1>
+                </div>
+                <svg class="h-16 w-16" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="48" height="48"
+                    viewBox="0 0 48 48" style=" fill:#000000;">
+                    <path fill="#e64a19" d="M26,17h-8c-3.866,0-7-3.134-7-7v0c0-3.866,3.134-7,7-7h8V17z"></path>
+                    <path fill="#7c4dff" d="M25,31h-7c-3.866,0-7-3.134-7-7v0c0-3.866,3.134-7,7-7h7V31z"></path>
+                    <path fill="#66bb6a"
+                        d="M18,45L18,45c-3.866,0-7-3.134-7-7v0c0-3.866,3.134-7,7-7h7v7C25,41.866,21.866,45,18,45z">
+                    </path>
+                    <path fill="#ff7043" d="M32,17h-7V3h7c3.866,0,7,3.134,7,7v0C39,13.866,35.866,17,32,17z"></path>
+                    <circle cx="32" cy="24" r="7" fill="#29b6f6"></circle>
+                </svg>
+            </li>
+        </ul>
+
     </div>
 
 
 </template>
 <script>
 import Skill from "./Skill.vue"
-import { skillsData } from "../data/data";
+import { skillsData, skillsDataSecond } from "../data/data";
 export default {
     data() {
         return {
             svgs: skillsData,
-            secondSvgs: []
+            secondSvgs: skillsDataSecond,
         };
     },
     components: { Skill }

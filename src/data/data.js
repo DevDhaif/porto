@@ -3,40 +3,60 @@ export const skillsData = [
     title: "React Js",
     start: "col-start-1",
     fontClass: "fa-brands fa-react",
-    fill: "text-cyan-900 dark:text-cyan-200",
+    fill: "text-cyan-900 transition-all duration-500 dark:text-cyan-200",
   },
   {
     title: "Git",
     start: "col-start-1",
     fontClass: "fa-brands fa-git",
-    fill: "text-rose-500 dark:text-rose-400",
+    fill: "text-rose-500 transition-all duration-500 dark:text-rose-400",
   },
   {
     title: "Github",
     start: "col-start-3 ",
     fontClass: "fa-brands fa-github",
-    fill: "text-cyan-800 dark:text-cyan-200",
+    fill: "text-cyan-800 transition-all duration-500 dark:text-cyan-200",
   },
   {
     title: "Javascript",
     start: "col-start-1",
     fontClass: "fa-brands fa-js",
-    fill: "text-yellow-500 dark:text-yellow-300",
+    fill: "text-yellow-500 transition-all duration-500 dark:text-yellow-300",
   },
   {
     title: "Css3",
     start: "col-start-3",
     fontClass: "fa-brands fa-css3-alt",
-    fill: "text-blue-600 dark:text-blue-200",
+    fill: "text-blue-600 transition-all duration-500 dark:text-blue-200",
   },
   {
     title: "HTML5",
     start: "col-start-5",
     fontClass: "fa-brands fa-html5",
-    fill: "text-orange-600 dark:text-orange-300",
+    fill: "text-orange-600 transition-all duration-500 dark:text-orange-300",
   },
 ];
+export const skillsDataSecond = [
+  {
+    title: "Bootstrap",
+    start: "col-start-1",
+    fontClass: "fa-brands fa-bootstrap",
+    fill: " dark:text-indigo-200 text-indigo-700",
+  },
 
+  {
+    title: "JAVA",
+    start: "col-start-3 ",
+    fontClass: "fa-brands fa-java",
+    fill: "text-blue-900  dark:text-blue-100",
+  },
+  {
+    title: "Laravel",
+    start: "col-start-5",
+    fontClass: "fa-brands fa-laravel",
+    fill: "text-orange-700 dark:text-orange-400",
+  },
+];
 //  <!--Exel Icon
 //  <svg class="w-16 h-16 col-start-1 rounded-full" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"
 //  width="48px" height="48px">
