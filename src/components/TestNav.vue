@@ -1,6 +1,6 @@
 <template>
     <nav
-        class="relative flex flex-col justify-between w-full max-w-6xl p-4 mx-auto font-mono dark:bg-cyan-800 dark:text-cyan-100 text-cyan-800 gap-y-4 md:flex-row">
+        class="relative flex flex-col justify-between w-full max-w-6xl p-4 mx-auto font-mono  dark:text-cyan-100 text-cyan-800 gap-y-4 md:flex-row">
         <button @click="toggle"
             class="absolute h-8 w-8 p-3 ml-4 mt-12 text-gray-500 transition duration-150 ease-in-out border border-transparent rounded-md md:left-36 -top-10 right-28 "
             aria-label="Color Mode">
@@ -32,7 +32,7 @@
             <span v-show="open"><i
                     class="transition-all duration-500 ease-in text-cyan-800 dark:text-white fa-solid fa-xmark"></i></span>
         </button>
-        <ul class="absolute dark:bg-cyan-800/90 bg-cyan-100/90 flex flex-col flex-wrap items-start justify-between w-full px-4 duration-200 ease-in shadow-md  top-20 md:w-auto md:static gap-x-8 sm:flex-row shadow-cyan-300 md:shadow-none"
+        <ul class="absolute dark:bg-cyan-800/90 md:dark:bg-transparent md:bg-transparent bg-cyan-50/90 flex flex-col flex-wrap items-start justify-between w-full px-4 duration-200 ease-in shadow-md  top-20 md:w-auto md:static gap-x-8 sm:flex-row shadow-cyan-300 md:shadow-none"
             :class="[open ? 'left-0' : '-left-[120%]']">
             <li class="my-4 animate-underline md:my-0" v-for="link in Links" :key="link.name">
                 <a :href="link.link" class="text-xl dark:hover:text-cyan-200 font-semibold hover:text-cyan-700">{{

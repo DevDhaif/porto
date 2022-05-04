@@ -57,6 +57,77 @@ export const skillsDataSecond = [
     fill: "text-orange-700 dark:text-orange-400",
   },
 ];
+
+export const projectsInfo = [
+  {
+    title: "Anime News",
+    desc: "Simple anime app to explore, search and filter animes,and get the latest anime news using jikan api.",
+    imgSrc:
+      "https://user-images.githubusercontent.com/77447520/159186205-fa01583e-58f2-4490-aa51-5478e5aa6aad.png",
+    githubLink: "https://github.com/DevDhaif/my-anime",
+    demoLink: "https://my-anime-seven.vercel.app/",
+    techs: ["HTML", "React Js", "Tailwind css", "Axios"],
+  },
+  {
+    title: "House Marketplace",
+    desc: "I built this app with react js , firebase and leaflet js, where you can login as a admin using google account or by email or as a guest , you can explore houses and filter them by (rent or sale), you also can add new offer or edit it ",
+    imgSrc:
+      "https://user-images.githubusercontent.com/77447520/157543838-184091a3-42ab-4ca3-b556-6e17e17531dc.png",
+    githubLink: "https://github.com/DevDhaif/house-marketplace",
+    demoLink: "https://house-marketplace-eosin.vercel.app/",
+    techs: [
+      "HTML",
+      "React Js",
+      "Tailwind css",
+      "Firebase",
+      "Leaflet",
+      "Framer Motion ",
+    ],
+  },
+  {
+    title: "Github finder",
+    desc: "Search for github users by name and see there public stats",
+    imgSrc:
+      "https://user-images.githubusercontent.com/77447520/154435369-2e2d3876-eb32-4df6-b03f-17019748ffd6.png",
+    githubLink: "https://github.com/DevDhaif/github-finder",
+    demoLink: "github-finder-one-lake.vercel.app",
+    techs: [
+      "HTML",
+      "React Js",
+      "Tailwind css",
+      "Daysi UI",
+      "Axios",
+      "Framer Motion",
+    ],
+  },
+  {
+    title: "Weather App",
+    desc: "A weather app ,you can search and filter countries and cities, I used the open weather  api.",
+    imgSrc:
+      "https://user-images.githubusercontent.com/77447520/166705680-d57c8795-04b0-4caf-af8b-7360cebf0f74.JPG",
+    githubLink: "https://github.com/DevDhaif/weather-app",
+    demoLink: "https://weather-app-red-phi.vercel.app/",
+    techs: ["HTML", "React Js", "Tailwind css", "Axios"],
+  },
+  {
+    title: "Ib7ath",
+    desc: "A simple clone search engine of Google",
+    imgSrc:
+      "https://user-images.githubusercontent.com/77447520/154337775-df6716f6-38f9-43a5-b624-977156385bea.png",
+    githubLink: "https://github.com/DevDhaif/Ib7ath",
+    demoLink: "https://ib7ath.vercel.app/search",
+    techs: ["HTML", "React Js", "Tailwind css", "Axios"],
+  },
+  {
+    title: "My portfolio",
+    desc: "Well, you are exploring it now!",
+    imgSrc:
+      "https://user-images.githubusercontent.com/77447520/166709483-705f6ff5-0fd1-4bf6-9c71-02c8bbf5925d.JPG",
+    githubLink: "https://github.com/DevDhaif/porto",
+    demoLink: "https://ib7ath.vercel.app/search",
+    techs: ["HTML", "Vue Js", "Tailwind css", "Vite"],
+  },
+];
 //  <!--Exel Icon
 //  <svg class="w-16 h-16 col-start-1 rounded-full" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"
 //  width="48px" height="48px">

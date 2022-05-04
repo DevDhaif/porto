@@ -34,7 +34,7 @@
                     </span>
                     <span class="text-center"> Code </span>
                 </a>
-                <a class="block cursor-pointer text-cyan-800 dark:text-cyan-200" href="#" target="_blank">
+                <a class="block cursor-pointer text-cyan-800 dark:text-cyan-200" :href="data.demoLink" target="_blank">
 
 
                     <i
