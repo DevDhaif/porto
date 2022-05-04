@@ -1,5 +1,5 @@
 <template>
-    <section id="projects" class="w-full p-4 my-8 text-white ">
+    <section id="projects" class="w-full p-4 my-8 dark:text-white text-cyan-800 ">
         <div class="flex flex-col max-w-6xl mx-auto gap-y-8">
             <h2 class="text-3xl text-center md:text-left "> Projects I worked on </h2>
             <Project :data="{
