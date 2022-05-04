@@ -1,13 +1,17 @@
 <template>
     <div class="w-full max-w-2xl pt-8 mx-auto transition-all duration-500 max-h-fit">
-        <h1 class="py-8 transition-all duration-500 text-3xl text-center dark:text-cyan-300 text-cyan-900">My Skill set
+        <h1
+            class="py-8 transition-all duration-500 text-4xl font-mono tracking-wide text-center dark:text-cyan-100 text-cyan-800">
+            My
+            Skill set
         </h1>
 
 
         <ul class="grid transition-all duration-500 grid-cols-8 grid-rows-4 gap-4 py-4 m-4">
 
             <!--REACT ICON-->
-            <li v-for="svg in svgs" :class="svg?.start" class="w-16 transition-all duration-500 h-16  group relative">
+            <li v-for="svg in svgs" :class="svg?.start"
+                class="w-16 hover:scale-110 transition-all duration-200  h-16  group relative">
                 <div
                     class="absolute bottom-0 left-0 w-full transition-all duration-150 -translate-y-full bg-black opacity-0 cursor-pointer text-cyan-50 rounded-b-xl group-hover:translate-y-0 h-1/3 group-hover:opacity-90">
                     <h1 class="text-xs font-semibold font-mono  text-center ">{{ svg?.title }} </h1>
@@ -15,7 +19,7 @@
                 <i class="w-16 h-16 transition-all duration-500" :class="[svg?.fontClass, svg?.fill]"></i>
             </li>
             <!--Other Icons-->
-            <li class="w-16 h-16 col-start-1 group relative">
+            <li class="w-16 h-16 hover:scale-110 transition-all duration-200  col-start-1 group relative">
                 <div
                     class="absolute bottom-0 left-0 w-full transition-all duration-150 -translate-y-full bg-black opacity-0 cursor-pointer text-cyan-50 rounded-b-xl group-hover:translate-y-0 h-1/3 group-hover:opacity-90">
                     <h1 class="text-xs font-semibold font-mono  text-center ">PostMan </h1>
@@ -91,14 +95,14 @@
                     </g>
                 </svg>
             </li>
-            <li class="w-16 h-16 col-start-3 group relative">
+            <li class="w-16 hover:scale-110 transition-all duration-200  h-16 col-start-3 group relative">
                 <div
                     class="absolute bottom-0 left-0 w-full transition-all duration-150 -translate-y-full bg-black opacity-0 cursor-pointer text-cyan-50 rounded-b-xl group-hover:translate-y-0 h-1/3 group-hover:opacity-90">
                     <h1 class="text-xs font-semibold font-mono  text-center ">Npm </h1>
                 </div>
                 <i class="h-16 stroke-2 stroke-black text-red-400 w-16 fa-brands fa-npm"></i>
             </li>
-            <li class="w-16 h-16 col-start-5 group relative">
+            <li class="w-16  hover:scale-110 transition-all duration-200  h-16 col-start-5 group relative">
                 <div
                     class="absolute bottom-0 left-0 w-full transition-all duration-150 -translate-y-full bg-black opacity-0 cursor-pointer text-cyan-50 rounded-b-xl group-hover:translate-y-0 h-1/3 group-hover:opacity-90">
                     <h1 class="text-xs font-semibold font-mono  text-center ">Firebase </h1>
@@ -113,7 +117,7 @@
                     </path>
                 </svg>
             </li>
-            <li class="w-16 h-16 col-start-7 group relative">
+            <li class="w-16 h-16 hover:scale-110 transition-all duration-200  col-start-7 group relative">
                 <div
                     class="absolute bottom-0 left-0 w-full transition-all duration-150 -translate-y-full bg-black opacity-0 cursor-pointer text-cyan-50 rounded-b-xl group-hover:translate-y-0 h-1/3 group-hover:opacity-90">
                     <h1 class="text-xs text-center ">Tailwindcss </h1>
@@ -132,10 +136,12 @@
             </li>
         </ul>
         <!--Second Grid-->
-        <h1 class="py-8 text-3xl text-center dark:text-cyan-300 text-cyan-900">Fimiliar with</h1>
+        <h1 class="py-8 text-4xl font-mono tracking-wide text-center dark:text-cyan-100 text-cyan-800">Fimiliar with
+        </h1>
 
         <ul class="grid  grid-cols-5 gap-y-4 py-4 m-4">
-            <li v-for="svg in secondSvgs" :class="svg?.start" class="w-16 h-16  group relative">
+            <li v-for="svg in secondSvgs" :class="svg?.start"
+                class="w-16 hover:scale-110 transition-all duration-200 h-16  group relative">
                 <div
                     class="absolute bottom-0 left-0 w-full transition-all duration-150 -translate-y-full bg-black opacity-0 cursor-pointer text-cyan-50 rounded-b-xl group-hover:translate-y-0 h-1/3 group-hover:opacity-90">
                     <h1 class="text-xs font-semibold font-mono  text-center ">{{ svg?.title }} </h1>
@@ -143,7 +149,7 @@
                 <i class="w-16 h-16  stroke-2  stroke-black rounded-3xl" :class="[svg?.fontClass, svg?.fill]"></i>
             </li>
 
-            <li class="w-16 h-16  group relative col-start-2">
+            <li class="w-16 h-16 hover:scale-110 transition-all duration-200  group relative col-start-2">
                 <div
                     class="absolute bottom-0 left-0 w-full transition-all duration-150 -translate-y-full bg-black opacity-0 cursor-pointer text-cyan-50 rounded-b-xl group-hover:translate-y-0 h-1/3 group-hover:opacity-90">
                     <h1 class="text-xs font-semibold font-mono  text-center ">Vue Js </h1>
@@ -154,7 +160,7 @@
                     <polygon fill="#455a64" points="29.24,8 23.987,17 18.734,8 11.146,8 23.987,30 36.828,8"></polygon>
                 </svg>
             </li>
-            <li class="w-16 h-16  group relative col-start-4">
+            <li class="w-16 h-16 hover:scale-110 transition-all duration-200  group relative col-start-4">
                 <div
                     class="absolute bottom-0 left-0 w-full transition-all duration-150 -translate-y-full bg-black opacity-0 cursor-pointer text-cyan-50 rounded-b-xl group-hover:translate-y-0 h-1/3 group-hover:opacity-90">
                     <h1 class="text-xs font-semibold font-mono  text-center ">Flutter </h1>
@@ -170,7 +176,7 @@
                 </svg>
 
             </li>
-            <li class="w-16 h-16  group relative col-start-3">
+            <li class="w-16 h-16 hover:scale-110 transition-all duration-200  group relative col-start-3">
                 <div
                     class="absolute bottom-0 left-0 w-full transition-all duration-150 -translate-y-full bg-black opacity-0 cursor-pointer text-cyan-50 rounded-b-xl group-hover:translate-y-0 h-1/3 group-hover:opacity-90">
                     <h1 class="text-xs font-semibold font-mono  text-center ">Figma </h1>

@@ -35,7 +35,11 @@
         <ul class="absolute flex flex-col flex-wrap items-start justify-between w-full px-4 duration-200 ease-in shadow-md bg-opacity-80 top-20 md:w-auto md:static gap-x-8 sm:flex-row shadow-cyan-300 md:shadow-none"
             :class="[open ? 'left-0' : '-left-[120%]']">
             <li class="my-4 animate-underline md:my-0" v-for="link in Links" :key="link.name">
-                <a href={{link.link}} class="text-xl font-semibold hover:text-cyan-700">{{ link.name }}</a>
+                <a :href="link.link" class="text-xl dark:hover:text-cyan-200 font-semibold hover:text-cyan-700">{{
+                        link.name
+                
+                }}</a>
+
             </li>
             <li class="my-4 md:my-0">
                 <a class="block " href="https://github.com/DevDhaif" target="_blank">
@@ -61,6 +65,7 @@
                     <span class="sr-only">LinkedIn</span>
                 </a>
             </li>
+
         </ul>
     </nav>
 </template>
