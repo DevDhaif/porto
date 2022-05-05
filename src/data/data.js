@@ -35,6 +35,12 @@ export const skillsData = [
     fontClass: "fa-brands fa-html5",
     fill: "text-orange-600 transition-all duration-500 dark:text-orange-300",
   },
+  {
+    title: "NPM",
+    start: "col-start-1 ",
+    fontClass: "fa-brands fa-npm",
+    fill: "text-orange-600  transition-all duration-500 dark:text-orange-300",
+  },
 ];
 export const skillsDataSecond = [
   {
@@ -90,7 +96,7 @@ export const projectsInfo = [
     imgSrc:
       "https://user-images.githubusercontent.com/77447520/154435369-2e2d3876-eb32-4df6-b03f-17019748ffd6.png",
     githubLink: "https://github.com/DevDhaif/github-finder",
-    demoLink: "github-finder-one-lake.vercel.app",
+    demoLink: "https://github-getty.vercel.app/",
     techs: [
       "HTML",
       "React Js",

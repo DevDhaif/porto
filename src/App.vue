@@ -13,10 +13,12 @@ import TestNav from './components/TestNav.vue';
 
 <template >
   <div :class="isDark ? 'dark' : ''">
-    <div
-      class="fixed right-0 top-20 w-12 h-12 dark:text-cyan-800 text-cyan-100 dark:bg-cyan-100 bg-cyan-800  shadow-md shadow-cyan-800 rounded-full">
-      <p id="num" class="text-center mt-2  ">0%</p>
-    </div>
+    <Transition appear @beforeEnter="beforeEnter" @enter="enter">
+      <div
+        class="fixed right-0 top-20 w-12 h-12 dark:text-cyan-800 text-cyan-100 dark:bg-cyan-100 bg-cyan-800  shadow-md shadow-cyan-800 rounded-full">
+        <p id="num" class="text-center mt-2  ">0%</p>
+      </div>
+    </Transition>
     <!--
     <div class="fixed w-full z-20 ">
       <div
@@ -49,6 +51,8 @@ import TestNav from './components/TestNav.vue';
   </div>
 </template>
 <script>
+import gsap from "gsap";
+
 export default {
 
   name: 'App',
@@ -77,6 +81,18 @@ export default {
         // scrolling.style.width = percent + '%';
         document.getElementById('num').innerText = `${Math.floor(percent)} %`
       });
+    },
+    beforeEnter(el) {
+      el.style.opacity = 0
+      el.style.transform = 'translateY(200px)'
+    },
+    enter(el) {
+      gsap.to(el, {
+        opacity: 1,
+        y: 0,
+        duration: 1,
+        delay: 1
+      })
     }
   }
 }
