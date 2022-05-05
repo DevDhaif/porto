@@ -34,6 +34,17 @@
         </button>
         <ul class="absolute dark:bg-cyan-800/90 md:dark:bg-transparent md:bg-transparent bg-cyan-50/90 flex flex-col flex-wrap items-start justify-between w-full px-4 duration-200 ease-in shadow-md  top-20 md:w-auto md:static gap-x-8 sm:flex-row shadow-cyan-300 md:shadow-none"
             :class="[open ? 'left-0' : '-left-[120%]']">
+            <li class="my-4 animate-underline md:my-0">
+                <router-link to="/home" class="text-xl dark:hover:text-cyan-200 font-semibold hover:text-cyan-700">
+                    Home</router-link>
+
+            </li>
+            <li class="my-4 animate-underline md:my-0">
+                <router-link to="/about" class="text-xl dark:hover:text-cyan-200 font-semibold hover:text-cyan-700">
+                    About</router-link>
+
+            </li>
+
             <li class="my-4 animate-underline md:my-0" v-for="link in Links" :key="link.name">
                 <a :href="link.link" class="text-xl dark:hover:text-cyan-200 font-semibold hover:text-cyan-700">{{
                         link.name
@@ -41,6 +52,7 @@
                 }}</a>
 
             </li>
+
             <li class="my-4 md:my-0">
                 <a class="block " href="https://github.com/DevDhaif" target="_blank">
                     <span class=" dark:fill-cyan-200 fill-cyan-900" aria-hidden="true">
@@ -77,7 +89,6 @@ export default {
             darkMode: false,
             Links: [
                 { name: 'Projects', link: '#projects' },
-                { name: 'About', link: '#about.html' },
                 { name: 'Contact', link: '#contact' },
                 { name: 'Resume', link: '../../public/ex.pdf' },
 

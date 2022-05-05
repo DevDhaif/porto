@@ -13,8 +13,7 @@
 
             <li v-for="(svg, index)  in svgs" :class="svg?.start"
                 class="w-16 hover:scale-110 transition-all duration-200  h-16  group relative">
-                <transition appear :data-index="index" @appear-cancelled="leave" @beforeEnter="beforeEnter"
-                    @enter="enter">
+                <transition appear :data-index="index" @enter="enter" @beforeEnter="beforeEnter">
                     <div>
                         <div
                             class="absolute bottom-0 left-0 w-full transition-all duration-150 -translate-y-full bg-black opacity-0 cursor-pointer text-cyan-50 rounded-b-xl group-hover:translate-y-0 h-1/3 group-hover:opacity-90">
@@ -259,8 +258,8 @@ export default {
         },
         leave(el) {
             gsap.to(el, {
-                opacity: 0,
-                x: 200,
+                opacity: 1,
+                x: 500,
                 duration: 2,
                 delay: el.dataset.index * 0.3
             })
