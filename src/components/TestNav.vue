@@ -35,7 +35,7 @@
         <ul class="absolute dark:bg-cyan-800/90 md:dark:bg-transparent md:bg-transparent bg-cyan-50/90 flex flex-col flex-wrap items-start justify-between w-full px-4 duration-200 ease-in shadow-md  top-20 md:w-auto md:static gap-x-8 sm:flex-row shadow-cyan-300 md:shadow-none"
             :class="[open ? 'left-0' : '-left-[120%]']">
             <li class="my-4 animate-underline md:my-0">
-                <router-link to="/home" class="text-xl dark:hover:text-cyan-200 font-semibold hover:text-cyan-700">
+                <router-link to="/" class="text-xl dark:hover:text-cyan-200 font-semibold hover:text-cyan-700">
                     Home</router-link>
 
             </li>

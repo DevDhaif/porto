@@ -7,11 +7,6 @@ import About from "../pages/About.vue";
 const routes = [
   {
     path: "/",
-    name: "App",
-    component: App,
-  },
-  {
-    path: "/home",
     name: "Home",
     component: Home,
   },

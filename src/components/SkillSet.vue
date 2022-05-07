@@ -1,37 +1,40 @@
 <template>
     <div class="w-full max-w-2xl pt-8 mx-auto transition-all duration-500 max-h-fit">
-        <h1
-            class="py-8 transition-all duration-500 text-4xl font-mono tracking-wide text-center dark:text-cyan-100 text-cyan-800">
-            My
-            Skill set
-        </h1>
+        <transition>
+            <h1 id="skills"
+                class="py-8 font-mono text-4xl tracking-wide text-center transition-all duration-500 dark:text-cyan-100 text-cyan-800">
+                My
+                Skill set
+            </h1>
+        </transition>
 
 
-        <ul class="grid transition-all duration-500 grid-cols-8 grid-rows-4 gap-4 py-4 m-4">
+        <ul class="grid grid-cols-8 grid-rows-4 gap-4 py-4 m-4 transition-all duration-500">
 
             <!--REACT ICON-->
 
             <li v-for="(svg, index)  in svgs" :class="svg?.start"
-                class="w-16 hover:scale-110 transition-all duration-200  h-16  group relative">
-                <transition appear :data-index="index" @enter="enter" @beforeEnter="beforeEnter">
+                class="relative w-16 h-16 transition-all duration-200 hover:scale-110 group">
+                <transition appear @click="enter" @scroll="enter" :data-index="index" @enter="enter"
+                    @beforeEnter="beforeEnter">
                     <div>
                         <div
                             class="absolute bottom-0 left-0 w-full transition-all duration-150 -translate-y-full bg-black opacity-0 cursor-pointer text-cyan-50 rounded-b-xl group-hover:translate-y-0 h-1/3 group-hover:opacity-90">
-                            <h1 class="text-xs font-semibold font-mono  text-center ">{{ svg?.title }} </h1>
+                            <h1 class="font-mono text-xs font-semibold text-center ">{{ svg?.title }} </h1>
                         </div>
                         <i class="w-16 h-16 transition-all duration-500" :class="[svg?.fontClass, svg?.fill]"></i>
                     </div>
                 </transition>
             </li>
             <!--Other Icons-->
-            <li class="w-16 h-16 hover:scale-110 transition-all duration-200  col-start-3 group relative">
+            <li class="relative w-16 h-16 col-start-3 transition-all duration-200 hover:scale-110 group">
                 <transition appear :data-index="7" @beforeEnter="beforeEnter" @enter="enter">
                     <div>
                         <div
                             class="absolute bottom-0 left-0 w-full transition-all duration-150 -translate-y-full bg-black opacity-0 cursor-pointer text-cyan-50 rounded-b-xl group-hover:translate-y-0 h-1/3 group-hover:opacity-90">
-                            <h1 class="text-xs font-semibold font-mono  text-center ">PostMan </h1>
+                            <h1 class="font-mono text-xs font-semibold text-center ">PostMan </h1>
                         </div>
-                        <svg class="w-16  h-16 " viewBox="0 0 256 256" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                        <svg class="w-16 h-16 " viewBox="0 0 256 256" version="1.1" xmlns="http://www.w3.org/2000/svg"
                             xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid">
                             <g>
                                 <path
@@ -105,12 +108,12 @@
                 </transition>
             </li>
 
-            <li class="w-16  hover:scale-110 transition-all duration-200  h-16 col-start-5 group relative">
+            <li class="relative w-16 h-16 col-start-5 transition-all duration-200 hover:scale-110 group">
                 <transition appear :data-index="8" @beforeEnter="beforeEnter" @enter="enter">
                     <div>
                         <div
                             class="absolute bottom-0 left-0 w-full transition-all duration-150 -translate-y-full bg-black opacity-0 cursor-pointer text-cyan-50 rounded-b-xl group-hover:translate-y-0 h-1/3 group-hover:opacity-90">
-                            <h1 class="text-xs font-semibold font-mono  text-center ">Firebase </h1>
+                            <h1 class="font-mono text-xs font-semibold text-center ">Firebase </h1>
                         </div>
                         <svg class="w-16 h-16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"
                             style=" fill:#000000;">
@@ -127,7 +130,7 @@
                     </div>
                 </transition>
             </li>
-            <li class="w-16 h-16 hover:scale-110 transition-all duration-200  col-start-7 group relative">
+            <li class="relative w-16 h-16 col-start-7 transition-all duration-200 hover:scale-110 group">
                 <transition appear :data-index="9" @beforeEnter="beforeEnter" @enter="enter">
                     <div>
                         <div
@@ -150,32 +153,31 @@
             </li>
         </ul>
         <!--Second Grid-->
-        <h1 class="py-8 text-4xl font-mono tracking-wide text-center dark:text-cyan-100 text-cyan-800">Fimiliar with
+        <h1 class="py-8 font-mono text-4xl tracking-wide text-center dark:text-cyan-100 text-cyan-800">Fimiliar with
         </h1>
 
-        <ul class="grid  grid-cols-5 gap-y-4 py-4 m-4">
+        <ul class="grid grid-cols-5 py-4 m-4 gap-y-4">
             <li v-for="(svg, index) in secondSvgs" :class="svg?.start"
-                class="w-16 hover:scale-110 transition-all duration-200 h-16  group relative">
+                class="relative w-16 h-16 transition-all duration-200 hover:scale-110 group">
                 <transition appear :data-index="index" @beforeEnter="beforeEnter" @enter="enter">
                     <div>
                         <div
                             class="absolute bottom-0 left-0 w-full transition-all duration-150 -translate-y-full bg-black opacity-0 cursor-pointer text-cyan-50 rounded-b-xl group-hover:translate-y-0 h-1/3 group-hover:opacity-90">
-                            <h1 class="text-xs font-semibold font-mono  text-center ">{{ svg?.title }} </h1>
+                            <h1 class="font-mono text-xs font-semibold text-center ">{{ svg?.title }} </h1>
                         </div>
-                        <i class="w-16 h-16  stroke-2  stroke-black rounded-3xl"
-                            :class="[svg?.fontClass, svg?.fill]"></i>
+                        <i class="w-16 h-16 stroke-2 stroke-black rounded-3xl" :class="[svg?.fontClass, svg?.fill]"></i>
                     </div>
                 </transition>
             </li>
 
-            <li class="w-16 h-16 hover:scale-110 transition-all duration-200  group relative col-start-2">
+            <li class="relative w-16 h-16 col-start-2 transition-all duration-200 hover:scale-110 group">
                 <transition appear :data-index="3" @beforeEnter="beforeEnter" @enter="enter">
                     <div>
                         <div
                             class="absolute bottom-0 left-0 w-full transition-all duration-150 -translate-y-full bg-black opacity-0 cursor-pointer text-cyan-50 rounded-b-xl group-hover:translate-y-0 h-1/3 group-hover:opacity-90">
-                            <h1 class="text-xs font-semibold font-mono  text-center ">Vue Js </h1>
+                            <h1 class="font-mono text-xs font-semibold text-center ">Vue Js </h1>
                         </div>
-                        <svg class="h-16 w-16" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="48" height="48"
+                        <svg class="w-16 h-16" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="48" height="48"
                             viewBox="0 0 48 48" style=" fill:#000000;">
                             <polygon fill="#81c784" points="23.987,17 18.734,8 2.974,8 23.987,44 45,8 29.24,8">
                             </polygon>
@@ -185,12 +187,12 @@
                     </div>
                 </transition>
             </li>
-            <li class="w-16 h-16 hover:scale-110 transition-all duration-200  group relative col-start-4">
+            <li class="relative w-16 h-16 col-start-4 transition-all duration-200 hover:scale-110 group">
                 <transition appear :data-index="4" @beforeEnter="beforeEnter" @enter="enter">
                     <div>
                         <div
                             class="absolute bottom-0 left-0 w-full transition-all duration-150 -translate-y-full bg-black opacity-0 cursor-pointer text-cyan-50 rounded-b-xl group-hover:translate-y-0 h-1/3 group-hover:opacity-90">
-                            <h1 class="text-xs font-semibold font-mono  text-center ">Flutter </h1>
+                            <h1 class="font-mono text-xs font-semibold text-center ">Flutter </h1>
                         </div>
                         <svg class="w-16 h-16 stroke-[0.2px] stroke-cyan-400" xmlns="http://www.w3.org/2000/svg" x="0px"
                             y="0px" width="48" height="48" viewBox="0 0 48 48" style=" fill:#000000;">
@@ -204,14 +206,14 @@
                     </div>
                 </transition>
             </li>
-            <li class="w-16 h-16 hover:scale-110 transition-all duration-200  group relative col-start-3">
+            <li class="relative w-16 h-16 col-start-3 transition-all duration-200 hover:scale-110 group">
                 <transition appear :data-index="5" @beforeEnter="beforeEnter" @enter="enter">
                     <div>
                         <div
                             class="absolute bottom-0 left-0 w-full transition-all duration-150 -translate-y-full bg-black opacity-0 cursor-pointer text-cyan-50 rounded-b-xl group-hover:translate-y-0 h-1/3 group-hover:opacity-90">
-                            <h1 class="text-xs font-semibold font-mono  text-center ">Figma </h1>
+                            <h1 class="font-mono text-xs font-semibold text-center ">Figma </h1>
                         </div>
-                        <svg class="h-16 w-16" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="48" height="48"
+                        <svg class="w-16 h-16" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="48" height="48"
                             viewBox="0 0 48 48" style=" fill:#000000;">
                             <path fill="#e64a19" d="M26,17h-8c-3.866,0-7-3.134-7-7v0c0-3.866,3.134-7,7-7h8V17z"></path>
                             <path fill="#7c4dff" d="M25,31h-7c-3.866,0-7-3.134-7-7v0c0-3.866,3.134-7,7-7h7V31z"></path>
@@ -235,6 +237,26 @@
 import Skill from "./Skill.vue"
 import { skillsData, skillsDataSecond } from "../data/data";
 import gsap from "gsap";
+import { onMounted } from "vue";
+
+onMounted(() => {
+    gsap.fromTo(
+        "#skills",
+        {
+            opacity: 0,
+            y: "100%",
+        },
+        {
+            duration: 1.5,
+            opacity: 1,
+            y: 0,
+            delay: 1.3,
+            ease: "power3.inOut",
+            stagger: 0.1,
+        }
+    );
+})
+
 export default {
     data() {
         return {
@@ -250,6 +272,7 @@ export default {
         enter(el) {
             gsap.to(el, {
                 opacity: 1,
+                scrollTrigger: true,
                 x: 0,
                 duration: 2,
                 delay: el.dataset.index * 0.3,
@@ -263,8 +286,11 @@ export default {
                 duration: 2,
                 delay: el.dataset.index * 0.3
             })
-        }
+        },
+
     },
     components: { Skill }
+
+
 }
 </script>
