@@ -42,6 +42,6 @@
             </li>
         </ul>
 
-        <p class="text-cyan-900 dark:text-cyan-100">&copy; 2022 Dhaifallah. All rights reserved.</p>
+        <p class="text-cyan-900 dark:text-cyan-100">&copy; {{ currentYear }} Dhaifallah. All rights reserved.</p>
     </footer>
 </template>
