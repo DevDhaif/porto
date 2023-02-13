@@ -27,6 +27,7 @@
                 </transition>
             </li>
             <!--Other Icons-->
+            <!-- 
             <li class="relative w-16 h-16 col-start-3 transition-all duration-200 hover:scale-110 group">
                 <transition appear :data-index="7" @beforeEnter="beforeEnter" @enter="enter">
                     <div>
@@ -107,7 +108,7 @@
                     </div>
                 </transition>
             </li>
-
+            -->
             <li class="relative w-16 h-16 col-start-5 transition-all duration-200 hover:scale-110 group">
                 <transition appear :data-index="8" @beforeEnter="beforeEnter" @enter="enter">
                     <div>

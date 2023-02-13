@@ -35,12 +35,12 @@ export const skillsData = [
     fontClass: "fa-brands fa-html5",
     fill: "text-orange-600 transition-all duration-500 dark:text-orange-300",
   },
-  {
-    title: "NPM",
-    start: "col-start-1 ",
-    fontClass: "fa-brands fa-npm",
-    fill: "text-orange-600  transition-all duration-500 dark:text-orange-300",
-  },
+  // {
+  //   title: "NPM",
+  //   start: "col-start-1 ",
+  //   fontClass: "fa-brands fa-npm",
+  //   fill: "text-orange-600  transition-all duration-500 dark:text-orange-300",
+  // },
 ];
 export const skillsDataSecond = [
   {
