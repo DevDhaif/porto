@@ -42,6 +42,16 @@
             </li>
         </ul>
 
-        <p class="text-cyan-900 dark:text-cyan-100">&copy; {{ currentYear }} Dhaifallah. All rights reserved.</p>
+        <p class="text-cyan-900 dark:text-cyan-100">&copy; {{ currYear }} Dhaifallah. All rights reserved.</p>
     </footer>
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      currYear: new Date().getFullYear(),
+    };
+  },
+};
+</script>
